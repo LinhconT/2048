@@ -9,6 +9,7 @@ public class Activity1Tester {
 		// invoke the toString method by passing the object to 
 		// print or println
 
+		System.out.println(toString);
 		
 		System.out.println(b);
 		

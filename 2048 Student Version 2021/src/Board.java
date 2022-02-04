@@ -44,13 +44,21 @@ public class Board {
 		 * System.out.println(String.format("%04d",x));
 		 *     
 		 */
-		
+		String builder = "";
+
+		for (int r = 0; r < board.length; r++){
+			builder+= "\n";
+		for (int c = 0; c < board[0].length; c++){
+		builder += String.format("%04d", board[r][c]);
+		builder += " ";
+			}
+		}
 		//setup loops to visit
 		//every spot possible
 		
 		
 		
-		return "";
+		return builder;
 	}
 
 	/*
@@ -58,11 +66,9 @@ public class Board {
 	 * to a 2 or 4 (90/10 chance). an empty spot is defined to be a 0 element
 	 * Must use the Random class object rnd.
 	 * Example Use of rnd object.
-	 * 
-	 * int randomNum = rnd.nextInt(10); //returns a number in range [0 10) (not
-	 * inclusive on the 10)
 	 */
-
+	 int randomNum = rnd.nextInt(5)+2;
+	
 	public void populateOne() {
 		
 		// is there an empty spot?
@@ -70,8 +76,6 @@ public class Board {
 		// check if that tile is empty, if it is NOT empty,
 		// generate another set of row and column
 		// what happens if the entire board is full??! 
-		
-		
 		
 			
 
